@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+
+<html lang="hr"> 
+
+<head> 
+
+ <meta charset="UTF-8" /> 
+
+ <title>Varijable</title> 
+
+</head> 
+
+<body> 
+
+ <script type="text/javascript"> 
+ 
+ document.write('Prosti brojevi od 1 do 1000:');
+
+    for (let i = 2; i <= 1000; i++) 
+	{
+      let Prost = true;
+      for (let j = 2; j < i; j++) 
+	  {
+        if (i % j === 0)
+		{
+          Prost = false;
+          break;
+        }
+      }
+      if (Prost) 
+	  {
+        console.log(i);
+        document.write(i + '<br>');
+      }
+    }
+ 
+ 
+ 
+
+ </script> 
+
+</body> 
+
+</html> 

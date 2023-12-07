@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+
+<html lang="hr"> 
+
+<head> 
+
+ <meta charset="UTF-8" /> 
+
+ <title>Varijable</title> 
+
+</head> 
+
+<body> 
+
+ <script type="text/javascript"> 
+
+function filtrirajNiz(arr) 
+{
+  let novoPolje = [];
+
+  for (let i = 0; i < arr.length; i++) 
+  {
+    let trenutniElement = arr[i];
+
+    if (trenutniElement.toUpperCase() === trenutniElement || trenutniElement.length >= 5) 
+	{
+      novoPolje.push(trenutniElement);
+    }
+  }
+
+  return novoPolje;
+}
+
+let polje = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', 'je', 'proradio'];
+let filtriranoPolje = filtrirajNiz(polje);
+
+console.log(filtriranoPolje); 
+
+
+
+
+ </script> 
+
+</body> 
+
+</html> 

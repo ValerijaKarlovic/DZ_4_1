@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+
+<html lang="hr"> 
+
+<head> 
+
+ <meta charset="UTF-8" /> 
+
+ <title>Varijable</title> 
+
+</head> 
+
+<body> 
+
+ <script type="text/javascript"> 
+let osoba1 = { firstName: "Marko", lastName: "Maric", age: 40, eyeColor: "black", height: "190cm", hairColor: "brown" };
+let osoba2 = { firstName: "Ana", lastName: "Anić", age: 30, eyeColor: "blue", height: "178cm", hairColor: "blonde" };
+let osoba3 = { firstName: "Ivan", lastName: "Ivić", age: 25, eyeColor: "brown", height: "185cm", hairColor: "black" };
+
+let osobe = [osoba1, osoba2, osoba3];
+
+osobe.forEach(function(objekt, index) {
+  for (let key in objekt) {
+    document.write(key + ": " + objekt[key] + "<br>");
+  }
+});
+
+ </script> 
+
+</body> 
+
+</html> 
